@@ -1,6 +1,8 @@
 ## Line following Car
 It is a device which follows path drawn on floor using some sensors.
 
+![Line Following Car](MiniTask_1/LineFollowingCar.jpg)
+
 Here, key stuff we use are two reflective optical sensors, inverter, motor driver, regulator.
 
 Reflective optical sensors are used to find path. Here, path is defined by either black strip on white floor or white strip on black floor. These sensors consist of photo-transistor and an IR emitter. Depending on intensity captured the direction is decided.
@@ -15,6 +17,8 @@ Regulator is used to control voltage flow from source
 ## Cell phone Detector 
 It is a device which detects any activated phone is present nearby. This device generally tries to detect RF signals released by phone.
 
+![Cell Phone Detector](MiniTask_1/PhoneDetector.jpg)
+
 Here, key stuff we use are Schottky Diode, Inductor, Comparator
 
 Generally, cell phones transmits and receives a RF signal which are in a range of 0.9 to 3 GHz. These signals can induce inductor which we can rectify by schottky diode and filter by a capacitor. This signal can be amplified by transistor.
@@ -25,7 +29,9 @@ And we can set an LED to the output logic by comparator thus making LED glow whe
 
 
 ## Visitor Counter
-It is a device which detects how many people went in an out of a room
+It is a device which detects how many people went in and out of a room
+
+![Visitor Counter](MiniTask_1/BidirectionalCounter.jpg)
 
 Here, key stuff we use are two IR sensors, display, microcontroller
 
@@ -33,9 +39,13 @@ We use IR sensor one at entry and other at exit of gate.
 
 We connect IRs and display to microcontroller and program it accordingly such that when an object passes from both the IRs into the room, we increase number of people in a room by one and if an object passes from both the IRs out of the room, we decrease number of people in a room by one.
 
+![Visitor Counter](MiniTask_1/Bidirectional.gif)
+
 
 ## Solar Battery Charger
 It is a device used to charge a battery using solar power
+
+![Solar Charger](MiniTask_1/SolarCharger.jpg)
 
 Here, key stuff we use are Solar Panel, Voltage Regulator, Schottky Diode, Diode.
 
@@ -47,6 +57,8 @@ Voltage regulator can be adjusted such that we can get required voltage for char
 ## FM Bugger 
 It is a device used to listen conversation from a distance using fm radio as receiver.
 
+![FM Bugger](MiniTask_1/FmBugger.jpg)
+
 Here, key stuff we use are mic, few capacitors and inductor
 
 We transmit signal from mic to reciever by frequrncy modulation which can be detected by fm receiver by setting it at a particular frequency. We first remove noise by using capacitors and later turn it into a carrrier signal using an inductor and capacitor. This capacitor can be adjusted accordingly thus setting frequency at receiver. We amplify signal using transistor and transmit it using antenna.
@@ -55,16 +67,23 @@ We transmit signal from mic to reciever by frequrncy modulation which can be det
 ## Water level indicator
 It is a circuit which shows water level in a container
 
+![Water Level](MiniTask_1/WaterLevel.jpg)
+
 Here, key stuff we use are ULN2003, metal contacts, buzzer
 
 As water is good conductor of electricity, we can use this property and make a level indicator. We keep metal contact connected to high at bottom of tank and other at levels where we want to get to notify. When water gets filled to certain level current flows from plate connected to high through water to plate connected to ULN2003 which has 7 pairs of Darlington transistor
 
 For the final contact connected, output is connected to a buzzer along with LED in parallel.
 
+![Water Level](MiniTask_1/Water.gif)
+
+
 ## Battery Level Indicator
 It is a device used to find charge present in a battery
 
 Here, key stuff we use are LM3914 IC, LEDs, Potentiometer.
+
+![LM3914](MiniTask_1/LM3914.gif)
 
 LM3914 IC is a LED dot/bar display driver. It takes input analog voltage and makes LEDs glow according to input voltage. Here, we set reference voltage levels (High, Low) using resistors and these resistors are decided by adjusting potentiometer and few resistors. Later on circuit is build accordingly and can be used for testing. There exists some error due extra resistance by cables etc,.
 
@@ -72,15 +91,20 @@ LM3914 IC is a LED dot/bar display driver. It takes input analog voltage and mak
 ## Magnetic Leviation 
 It is a project where we can suspend magnet in air
 
+![Leviation](MiniTask_1/Leviation.jpg)
+
 Here, key stuff we use are electromagnet, Hall Effect Sensor, Arduino and two push buttons
 
 We try to suspend magnet using attraction from above. We keep an electro magnet, Hall effect sensor at a distance of 5mm facing down ward on top. We adjust the position of electro magnet using switches, Thus making it balance in a position. 
 
 But we find that it starts oscillating after some time this is due to lorentz force at the top, this can be avoided by keeping a damping plate made of diamagnetic material at bottom.
 
+![Lorentz Force](MiniTask_1/Leviation1.jpg)
 
 ## Security using RFID reader
 It is a circuit which transmits radio frequencies and later reads the frequency emitted by the RFID card/tag.
+
+![RFID Reader](MiniTask_1/RFID.png)
 
 Here, key stuff we use are Arduino, RFID reader, Servo/anything (which operates on access)
 
