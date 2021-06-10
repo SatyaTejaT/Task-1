@@ -10,4 +10,8 @@ Here are the projects about which I had seen a few details.
 8. Magnetic leviation using Arduino
 9. Security access using RFID reader
 10. Remote control system for Doors and LEDs
-11. 
+11. Arduino Environmental Monitoring
+12. Burglar alerting System
+13. TV remote controlled home appliances
+14. Car Parking Sensor
+15. Measuring CO2 concentration in Air
