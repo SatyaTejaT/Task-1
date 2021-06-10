@@ -28,11 +28,13 @@ Better avoid metal casing for the circuit as it may effect FM signals.
 Designing a security lock system which can be accessed by a RFID tag/card.
 
 ## Ideation and Pipeline
-* Scanning RFID ->  Microcontroller 
+* Scanning RFID ->  Microcontroller -> Execution
 
 | Part of the Pipeline | Feasibility | Advantages | Disadvantages |
 |----------------------|-------------|------------|---------------|
 | Scanning RFID        | working libraries available | Low power consumption |  |
 | Microcontroller      | Experience needed | Easily Programmable | Hard for beginners |
+| Execution            | Few piece of code is sufficient | Many options available | Power consumption may increase |
 
 ## Choosing pipeline
+Here, we can make betterments in execution.
