@@ -1,4 +1,4 @@
-## Line following Robot
+## Line following Car
 It is a device which follows path drawn on floor using some sensors.
 
 Here, key stuff we use are two reflective optical sensors, inverter, motor driver, regulator.
@@ -86,4 +86,14 @@ Here, key stuff we use are Arduino, RFID reader, Servo/anything (which operates 
 
 Generally, every RFID tag has a unique ID on it which is a 8-digit hexadecimal number. We take its ID in prior and code Arduino accordingly. Whenever RFID reader reads it, we make some unlocking procedure run when its a correct UID.
 
-##
+
+## Remote Control System for Doors and LEDs
+It is a circuit connected to Arduino which is communicated via Android app using bluetooth
+
+Here, key stuff we use are Arduino, Servo motor, Bluetooth module
+
+The important stuff in this project is programming a android app and coding arduino. Android app is made using Android Studio or some other related app using java/Kotlin language. We set bluetooth connectivity and few trigger signals using the app and make arduino respond. Arduino is kept active and programmed in such that it connects to any android phone with its bluetooth on but receive signal only through the app designed. Thus when command is given through the app it acts accordingly (turns servo thus opening door or turn on LED)
+
+
+## 
+
