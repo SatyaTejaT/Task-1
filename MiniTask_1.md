@@ -101,6 +101,7 @@ But we find that it starts oscillating after some time this is due to lorentz fo
 
 ![Lorentz Force](MiniTask_1/Leviation1.jpg)
 
+
 ## Security using RFID reader
 It is a circuit which transmits radio frequencies and later reads the frequency emitted by the RFID card/tag.
 
@@ -119,5 +120,49 @@ Here, key stuff we use are Arduino, Servo motor, Bluetooth module
 The important stuff in this project is programming a android app and coding arduino. Android app is made using Android Studio or some other related app using java/Kotlin language. We set bluetooth connectivity and few trigger signals using the app and make arduino respond. Arduino is kept active and programmed in such that it connects to any android phone with its bluetooth on but receive signal only through the app designed. Thus when command is given through the app it acts accordingly (turns servo thus opening door or turn on LED)
 
 
-## 
+## Arduino Environmental Monitoring
+It is a device which senses environment details like humidity, temp etc and uploading in cloud.
+
+Here, key stuff we use are Arduino, MikroE Environment click, WiFi driver
+
+We collect data from MikroE Environmental click and store it in flash storage. Arduino is connected to WiFi using WiFi driver and made send it to cloud using some IoT platform like WolkAbout where we create a device id and password for our arduino and send data using WiFi using libraries. Now, we can access data from any device using their application and few changes.
+
+
+## Burglar alerting system
+It is a circuit which alerts when a person enters using LDR.
+
+Here, key stuff we use are LDR, Regulator, Diode, Transistor
+
+![Burglar Circuit](MiniTask_1/Burglar.jpg)
+
+LDR as name says it is a light dependent resistor. It has high resistance in dark and low resistance in light. 
+
+Regulator is used to control voltage in the circuit. Diode is used to prevent reverse current in circuit. Here, we want either alarm or some alerting system respond when a person enters (i.e. shadow falls). It means when current reduces alert system should be active, so we use transistor to achieve this task.
+
+
+## TV remote controlled Home appliances
+It is a circuit which can enable or disable power supply to a home appliance using tv remote
+
+Here, key stuff we use are IR reciever, Micro controller, Relay, Transistor
+
+Generally, a TV remote signal is an IR signal which has different frequency for different button and system. We use this difference and make different remote work with their respected devices. Thus first we find out the frequency of light sent by our IR remote. Later noting the IR frequencies we build a code for our microcontroller which controls the power to few appliances by different inputs present in a remote. We use relay to activate and deactivate according to the signal sent by microcontroller. Transistor is use to amplify the signal.
+
+
+## Car Parking sensor
+It is a device which would make sound if car is getting near to end or wall backside
+
+Here, key stuff we use are Ultrasonic Sensor, Arduino and Buzzer
+
+Generally, we see many cars get hit by back wall while parking due to lack of proper sight in that region. To avoid it, we can use an Ultrasonic sensor on the wall of the parking place. We connect it to an arduino and measure the distance between car and wall and ring the buzzer when distance is less.
+
+
+## Measuring CO2 concentration in Air
+It is a Device which measures amount of CO2 present in air.
+
+Here, Key stuff we use are Arduino, MQ-135 Sensor, OLED display
+
+Here MQ-135 Gas Sensor is an air quality sensor used for detecting wide range of gases. Gas which it detects depends on the load resistor of it. Generally, The inbuilt value of it can be in the range of 10Kohm to 47Kohm. For CO2, the value is 22Kohm. 
+
+We code arduino using MQ135 library, for finding R0 (which is needed).
+Then we heat the circuit for 24 hrs and find value of resistance R0. Later, we go to the master folder and change Rload, Rzero values accordingly. We also change the values of AtmoCO2 to present value. Now, we are all set. We can use it for measuring CO2 and display it in OLED display.
 
