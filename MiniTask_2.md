@@ -32,9 +32,15 @@ Designing a security lock system which can be accessed by a RFID tag/card.
 
 | Part of the Pipeline | Feasibility | Advantages | Disadvantages |
 |----------------------|-------------|------------|---------------|
-| Scanning RFID        | working libraries available | Low power consumption |  |
+| Scanning RFID        | working libraries available | Low power consumption | Gets effected by magnet nearby |
 | Microcontroller      | Experience needed | Easily Programmable | Hard for beginners |
 | Execution            | Few piece of code is sufficient | Many options available | Power consumption may increase |
 
 ## Choosing pipeline
-Here, we can make betterments in execution.
+Here, we can make betterments in scanning RFID, execution.
+
+Scanning RFID is here being done by RFID-RC522 we can change it adafruit PN532 for better performance.
+
+Execution is done by usage of servo motor, but we can also think of using electronic door strike lock or solenoidal lock etc, for better security
+
+However, Only using RFID is not much safe as cloning of RFID tags occur. To avoid it we can add aditional security like pin.
